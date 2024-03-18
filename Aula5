@@ -1,0 +1,65 @@
+//exercicio 1
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num, conta;
+    cout<<"Digite um número inteiro: ";
+    cin>>num;
+    
+    conta = num%2;
+
+    if(conta == 0){
+        cout<<num<< " é par!";
+    }
+    else{
+        cout<<num<< " é impar!";
+    }
+    return 0;
+}
+
+//exercicio 2
+using System;
+class HelloWorld {
+  static void Main() {
+     int num1, num2, verifica; 
+    Console.Write("Saiba se os números são multiplos ou não!\r\nInsira o peimeiro valor inteiro: ");
+    num1 = int.Parse(Console.ReadLine());
+    Console.Write("Insira o segundo: ");
+    num2 = int.Parse(Console.ReadLine());
+    
+    if(num2>num1){
+        verifica = num2%num1;
+    }
+    else{
+        verifica = num1%num2;
+    }
+        if(verifica != 0){
+            Console.WriteLine("Não são multiplos!");
+        }
+        else{
+            Console.WriteLine("São multiplos!");
+        }
+  }
+}
+
+//exercicio 3
+using System;
+using System.Threading;
+class HelloWorld {
+  static void Main() {
+    Console.WriteLine("Escolha a classe e descubra a habilidade!");
+    Thread.Sleep(2000);
+    Console.WriteLine("1 - Guerreira\r\n2 - Mago\r\n3 - Arqueira");
+    int escolha = int.Parse(Console.ReadLine());
+    
+    switch(escolha){
+        case 1: Console.WriteLine("Ataque pesado, defesa total.");
+        break;
+        case 2: Console.WriteLine("Bola de fogo, escudo de gelo.");
+        break;
+        case 3: Console.WriteLine("Flecha precisa, disparo triplo.");
+        break;
+    }
+  }
+}
